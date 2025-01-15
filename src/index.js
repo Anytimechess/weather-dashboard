@@ -26,6 +26,7 @@ function setHomePage(api_object){
   let {address}=api_object
   let {feelslike,description,datetime,windspeed,humidity,pressure,visibility,sunrise,sunset,tempmax,tempmin,feelslikemax,feelslikemin,hours}=api_object.days[0];
   // hours is an array which contains 24-hrs climate info
+  document.querySelector('.dis-time').innerHTML=date.toString().slice(15,25);
   document.querySelector('.location-js').innerHTML=address;
   document.querySelector('.date-js').innerHTML=datetime;
   document.querySelector('.wind-speed').innerHTML=windspeed;
