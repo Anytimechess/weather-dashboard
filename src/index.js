@@ -43,6 +43,7 @@ function setHomePage(api_object){
   document.querySelector('.feelsLikeMin').innerHTML=feelslikemin;
   //  date.setDate(date.getDate()+2)
    document.querySelectorAll('.today').forEach((todayBtn)=>{
+    console.log(todayBtn);
     todayBtn.innerHTML=getDayFn(date.getDay());
    })
    //geting today date and displaying accurately
