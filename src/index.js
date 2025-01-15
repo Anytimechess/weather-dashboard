@@ -42,7 +42,9 @@ function setHomePage(api_object){
   document.querySelector('.feelslikemax').innerHTML=feelslikemax;
   document.querySelector('.feelsLikeMin').innerHTML=feelslikemin;
   //  date.setDate(date.getDate()+2)
-   document.querySelectorAll('.today').innerHTML=getDayFn(date.getDay());
+   document.querySelectorAll('.today').forEach((todayBtn)=>{
+    todayBtn.innerHTML=getDayFn(date.getDay());
+   })
    //geting today date and displaying accurately
       let currentTem={}
       hours.map((curent_temp)=>{
@@ -141,3 +143,6 @@ function setNextDays(dayCount,dayObject){
  document.querySelector(`.day-${dayCount}-10pm-temp`).innerHTML=`${day[3].temp} ${addDegress()}`;
  document.querySelector('.day-2-10pm-condition').innerHTML=day[3].conditions;
 }
+// function searchLocation(){
+//   document.querySelector
+// }
