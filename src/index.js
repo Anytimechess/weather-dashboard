@@ -41,7 +41,7 @@ function setHomePage(api_object){
   document.querySelector('.feelslikemax').innerHTML=feelslikemax;
   document.querySelector('.feelsLikeMin').innerHTML=feelslikemin;
   //  date.setDate(date.getDate()+2)
-   document.querySelector('.today').innerHTML=getDayFn(date.getDay());
+   document.querySelectorAll('.today').innerHTML=getDayFn(date.getDay());
    //geting today date and displaying accurately
       let currentTem={}
       hours.map((curent_temp)=>{
