@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap-library -->
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <!-- my styles -->
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/main-section.css">
+  <!-- bootstrap-icons -->
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+   <script src="../src/index.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar">
+      <div class="nav-item-1">
+        <span class="fw-bold">Weather App</span>
+      </div>
+      <div class="nav-item-2 input-group">
+          <span class="bi bi-search input-group-text"><span>
+          <input type="text" class="search-bar input-group-text" placeholder="search">
+      </div>
+      <!-- <div class="nav-item-3">
+        <span>login /</span>
+        <span>new user?</span>
+      </div> -->
+    </nav>
+  </header>
+  <section class="sec-1">
+    <div class="dis-time-overview">
+      <div class="fs-2 p-2">Today Overview</div>
+      <div class="dis-time">13:55</div>
+    </div>
+    <main>
+     
+      <div class="main-sec-1">
+        <div class="card-1">
+          <div class="card-header-1 ">
+            <span class="bi bi-sun sun"> </span>
+            <span class=" fw-bold curr-temp curr-temp-js">28.6c</span>
+            <span class="slash">/</span>
+            <span class=" curr-temp-feel">clear sky</span>
+          </div>
+          <div class="card-body-1">
+          
+          </div>
+          <div class="card-footer-1">
+            <div>
+              <span class="bi bi-pin pin"> </span>
+              <span class=" location-js location">istanBul</span>
+            </div>
+            <div>
+               <span class="bi bi-calendar-heart calender "> </span>
+               <span class="date-js date"> 28 august</span>
+            </div>
+          </div>
+        </div>         
+      </div>
+      <div class="main-sec-2">
+        <div class="main-sec-features">
+           <span class="bi bi-flag feature-icon"></span>
+           <div class="dis-features">
+             <p class="text-headings">Wind speed</p>
+             <p class="fw-bold wind-speed">28km/h</p>
+           </div>
+        </div>
+        <div class="main-sec-features">
+           <span class="bi bi-droplet feature-icon"></span>
+           <div class="dis-features">
+             <p class="text-headings">Humidity</p>
+             <p class="fw-bold humidity">28km/h</p>
+           </div>
+        </div>
+        <div class="main-sec-features">
+           <span class="bi bi-clock feature-icon"></span>
+           <div class="dis-features">
+             <p class="text-headings">Pressure</p>
+             <p class="fw-bold pressure">28km/h</p>
+           </div>
+        </div>
+        <div class="main-sec-features">
+           <span class="bi bi-view-stacked feature-icon"></span>
+           <div class="dis-features">
+             <p class="text-headings">Visibilty</p>
+             <p class="fw-bold visibilty">28km/h</p>
+           </div>
+        </div>
+        <div class="main-sec-features">
+           <span class="bi bi-sunrise feature-icon"></span>
+           <div class="dis-features">
+             <p class="text-headings">Sunrise</p>
+             <p class="fw-bold sunrise"></p>
+           </div>
+        </div>
+        <div class="main-sec-features">
+           <span class="bi bi-sunset feature-icon"></span>
+           <div class="dis-features">
+             <p class="text-headings">sunset</p>
+             <p class="fw-bold sunset">28km/h</p>
+           </div>
+        </div>
+      </div>
+      
+      <div class="main-sec-3">
+        <div class="main-sec-3-days">
+          <div>
+            <p class="text-headings today">Monday</p>
+            <p >MaxTemp</p>
+          </div>
+          <div>
+            <span class="fw-bold today-max-temp">28.6</span>
+            <span> &deg;c</span>
+          </div>
+        </div>
+        <div class="main-sec-3-days">
+          <div>
+            <p class="text-headings today">Monday</p>
+            <p >TempMin</p>
+          </div>
+          <div>
+            <span class="fw-bold today-min-temp"></span>
+            <span> &deg;c</span>
+          </div>
+          
+        </div>
+        <div class="main-sec-3-days">
+            <div>
+              <p class="text-headings today">Monday</p>
+              <p >feelsLikeMax</p>
+            </div>
+            <div>
+              <span class="fw-bold feelslikemax "></span>
+              <span> &deg;c</span>
+            </div>
+        </div>
+        <div class="main-sec-3-days">
+            <div>
+              <p class="text-headings today">Monday</p>
+              <p >feelsLikeMin</p>
+            </div>
+            <div>
+              <span class="fw-bold feelsLikeMin">28.6</span>
+              <span> &deg;c</span>
+            </div>
+        </div>
+      </div>
+    </main>
+  </section>
+  <section class="sec-2">
+     <div class="fw-bold fs-3 text-center">Next 2 Days </div>
+     <div class="my-2 text-center">
+       <span class="bg-white text-dark p-2 fw-bold">All Days</span>
+     </div>
+     <div class="sec-2-dashboard">
+        <div class="sec-2-item">
+          <div>
+            <p class="text-headings day-2-mrng ">28 Aug Mon</p>
+            <span>06:00</span>
+          </div>
+          <span class="bi bi-sun"></span>
+          <div class="dis-temp-condition">
+            <p class="day-2-6am-temp">28.6</p>
+            <span class="text-headings day-2-6am-condition">Clear</span>
+          </div>
+        </div>
+        <div class="sec-2-item">
+          <div>
+            <p class="text-headings day-2-afternoon">28 Aug Mon</p>
+            <span>12:00</span>
+          </div>
+          <span class="bi bi-sun"></span>
+          <div class="dis-temp-condition">
+            <p class="day-2-12pm-temp">28.6</p>
+            <span class="text-headings day-2-12pm-condition">Clear</span>
+          </div>
+        </div>
+        <div class="sec-2-item">
+          <div>
+            <p class="text-headings day-2-evng">28 Aug Mon</p>
+            <span>18:00</span>
+          </div>
+          <span class="bi bi-sun"></span>
+          <div class="dis-temp-condition">
+            <p class="day-2-6pm-temp">28.6</p>
+            <span class="text-headings day-2-6pm-condition">Clear</span>
+          </div>
+        </div>
+        <div class="sec-2-item">
+          <div>
+            <p class="text-headings day-2-night">28 Aug Mon</p>
+            <span >22:00</span>
+          </div>
+          <span class="bi bi-sun"></span>
+          <div class="dis-temp-condition">
+            <p class="day-2-10pm-temp">28.6</p>
+            <span class="text-headings day-2-10pm-condition">Clear</span>
+          </div>
+        </div>
+     
+        <div class="sec-2-item">
+          <div>
+            <p class="text-headings day-3-mrng">28 Aug Mon</p>
+            <span>06:00</span>
+          </div>
+          <span class="bi bi-sun"></span>
+          <div class="dis-temp-condition">
+            <p class="day-3-6am-temp">28.6</p>
+            <span class="text-headings day-3-6am-condition">Clear</span>
+          </div>
+        </div>
+        <div class="sec-2-item">
+          <div>
+            <p class="text-headings day-3-afternoon">28 Aug Mon</p>
+            <span>12:00</span>
+          </div>
+          <span class="bi bi-sun"></span>
+          <div class="dis-temp-condition">
+            <p class="day-3-12pm-temp">28.6</p>
+            <span class="text-headings day-3-12pm-condition">Clear</span>
+          </div>
+        </div>
+        <div class="sec-2-item">
+          <div>
+            <p class="text-headings day-3-evng">28 Aug Mon</p>
+            <span>18:00</span>
+          </div>
+          <span class="bi bi-sun"></span>
+          <div class="dis-temp-condition">
+            <p class="day-3-6pm-temp">28.6</p>
+            <span class="text-headings day-3-6pm-condition">Clear</span>
+          </div>
+        </div>
+        <div class="sec-2-item">
+          <div>
+            <p class="text-headings day-3-night">28 Aug Mon</p>
+            <span >22:00</span>
+          </div>
+          <span class="bi bi-sun"></span>
+          <div class="dis-temp-condition">
+            <p class="day-3-10pm-temp">28.6</p>
+            <span class="text-headings day-3-10pm-condition">Clear</span>
+          </div>
+        </div>
+     
+     </div>
+    
+  </section>
+</body>
+
+</html>

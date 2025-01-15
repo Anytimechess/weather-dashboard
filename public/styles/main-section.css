@@ -1,0 +1,126 @@
+
+main{
+  display: grid;
+  height: 1000px;
+  grid-template-columns:12fr;
+}
+.card-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border:2px solid black;
+  height: 70%;
+}
+.card-footer-1>div{
+  margin-top: 10px;
+}
+/* .main-sec-1,.main-sec-2,.main-sec-3{
+  height: 100%;
+} */
+.main-sec-2{
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+}
+.main-sec-features{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(27, 27, 70);
+}
+.feature-icon{
+  font-size: 28px;
+}
+.main-sec-3{
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  padding: 5px;
+  column-gap: 10px;
+}
+.main-sec-3-days{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.sec-2-dashboard{
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+}
+.sec-2-item{
+  display: flex;
+ justify-content: space-between;
+ /* height: 80%; */
+ /* width: 100%; */
+ /* height: 110px; */
+ margin: 10px;
+
+ background-color: rgb(20, 20, 66);
+ padding: 10px;
+}
+.dis-temp-condition{
+  width: 80x;
+}
+.today{
+  color: rgb(210, 200, 200);
+}
+.dis-features{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.text-headings{
+  font-weight: bold;
+  font-size: 16px;
+}
+.card-1{
+  height: 300px;
+  background: transparent;
+  border: none;
+  color: white;
+}
+.location{
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.date{
+  font-size: 25px;
+  /* font-weight: bold; */
+}
+.card-header-1,.card-body-1,.card-footer-1{
+  text-align: center;
+  padding: 0px;
+}
+.card-header-1{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.curr-temp{
+  font-size: 40px;
+}
+.curr-temp-feel{
+  font-size: 25px;
+}
+.sun{
+  font-size: 70px;
+}
+.slash{
+  font-size: 30px;
+}
+.pin,.calender{
+  font-size: 30px;
+}
+.dis-time{
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+.dis-time-overview{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
