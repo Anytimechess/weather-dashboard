@@ -21,13 +21,16 @@ function fetchCurrentWeather(){
 }
 fetchCurrentWeather();
 function setHomePage(api_object){
-  console.log(api_object)
+  // console.log(api_object)
 
   let {address}=api_object
   let {feelslike,description,datetime,windspeed,humidity,pressure,visibility,sunrise,sunset,tempmax,tempmin,feelslikemax,feelslikemin,hours}=api_object.days[0];
   // hours is an array which contains 24-hrs climate info
-  document.querySelector('.dis-time').innerHTML=date.toString().slice(15,25);
-  document.querySelector('.location-js').innerHTML=address;
+  // document.querySelector('.dis-time').innerHTML=date.toString().slice(15,25);
+  setTime();
+  setInterval(setTime,1000);
+  document.querySelector('.location-js').innerHTML=address.toUpperCase();
+  console.log(typeof(address));
   document.querySelector('.date-js').innerHTML=datetime;
   document.querySelector('.wind-speed').innerHTML=windspeed;
   document.querySelector('.humidity').innerHTML=humidity;
@@ -43,7 +46,7 @@ function setHomePage(api_object){
   document.querySelector('.feelsLikeMin').innerHTML=feelslikemin;
   //  date.setDate(date.getDate()+2)
    document.querySelectorAll('.today').forEach((todayBtn)=>{
-    console.log(todayBtn);
+    // console.log(todayBtn);
     todayBtn.innerHTML=getDayFn(date.getDay());
    })
    //geting today date and displaying accurately
@@ -65,9 +68,17 @@ function setHomePage(api_object){
 // setting day-2 values
  setNextDays(2,day2);
  setNextDays(3,day3);
-
-
-
+}
+//  setInterval(setTime,1000);
+function setTime(){
+  let date=new Date();
+  let hrs=date.getHours();
+  let mins=date.getMinutes();
+  let sec=date.getSeconds();
+  let timeEle=document.querySelector('.dis-time');
+    
+  timeEle.innerHTML=`${hrs}:${mins<10?'0'+mins:mins}:${sec<10?'0'+sec:sec}`;
+  //  console.log(timeEle);
 }
 function setNextDaysInfo(obj){
  let {}=obj;
